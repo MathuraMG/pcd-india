@@ -1,0 +1,34 @@
+html {
+  height: 100%;
+}
+body  {
+  height: 100%;
+  background-color: #031327;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  fill:white;
+  width: 5rem;
+  height: 5rem;
+}
+.title {
+  font-size: 2.4rem;
+  color: #aaa;
+  text-align: center;
+  font-family: 'Helvetica';
+  font-weight: 200;
+}
+
+.sub-title {
+  font-size: 1.4rem;
+  color: #ccc;
+  text-align: center;
+  font-family: 'Helvetica';
+  font-weight: 400;
+}
