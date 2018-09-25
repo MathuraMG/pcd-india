@@ -1,3 +1,4 @@
+/* HTML BASE */
 html {
   height: 100%;
   font-family: 'Source Sans Pro', sans-serif;
@@ -8,7 +9,6 @@ h1,h2,h3,p {
   padding: 0;
 }
 body  {
-  height: 100%;
   background: url('./images/back.png');
   background-size: cover;
   background-position: center;
@@ -16,6 +16,12 @@ body  {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0;
+}
+
+/* PAGE ELEMENTS */
+.divider {
+  width: 90%;
 }
 
 .logo {
@@ -28,42 +34,53 @@ body  {
   line-height: 40px;
   color: #fff;
   font-weight: 700;
-  margin: 1rem 0;
+  margin: 1rem;
 }
 
 .sub-title {
   font-size: 24px;
   line-height: 30px;
-  color: #fff;
+  color: #a0a0a0;
   font-weight: 600;
 }
 
 .para {
   font-size: 20px;
   line-height: 28px;
-  color: #fff;
+  color: #444;
   font-weight: 400;
   width: 80%;
-  margin: 1rem 0;
+  margin: 1rem auto;
 }
 
-.center {
-  text-align: center;
+.main-content {
+  background: white;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  padding-bottom: 2rem;
 }
 
-.left {
-  text-align: left;
-  width: 80%;
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}
+.link:hover {
+  color: #888;
 }
 
+.highlight {
+  color: #11c7aa;
+  font-weight: 600;
+}
+
+/* PLACES MENU */
 .places__list {
   padding: 0;
   display: flex;
   flex-direction: row;
   list-style: none;
-
 }
-
 .places__item {
   margin: 0 0.5rem;
   font-size: 1.2rem;
@@ -86,18 +103,59 @@ body  {
   line-height: 2rem;
 }
 
+/* EFFECTS */
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+  width: 80%;
+  margin: 1rem auto;
+}
+.grey {
+  color: #868686;
+}
+
+/* TEAM */
 .team__list {
   padding: 0;
   display: flex;
   width: 80%;
   justify-content: space-between;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .team__item {
-  width: 30%;
+  width: 100%;
+  list-style: none;
 }
 
 .team__image {
   width: 100%;
   max-width: 250px;
+  display: flex;
+  margin: 0 auto;
 }
+
+.team__bio {
+  width: 100%;
+}
+
+/* RESPONSIVENESS */
+@media all and (min-width:1200px){
+  .main-content {
+    width: 80%;
+  }
+  .team__item {
+    width: 30%;
+    list-style: none;
+  }
+ }
+
+@media all and (min-width: 768px) and (max-width: 1200px) {
+  .main-content {
+    width: 80%;
+  }
+ }
