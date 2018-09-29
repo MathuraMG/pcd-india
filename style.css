@@ -9,7 +9,6 @@ h1,h2,h3,p {
   padding: 0;
 }
 body  {
-  background: url('./images/back.png');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -19,9 +18,32 @@ body  {
   margin: 0;
 }
 
+canvas {
+   position: fixed;
+   top: 0;
+   left:0;
+   z-index: -1;
+}
+
 /* PAGE ELEMENTS */
+.credits {
+  font-size: 0.8rem;
+  position: fixed;
+  left: 0.5rem;
+  bottom: 0.5rem;
+}
+
+.credits__link {
+  color: #ed225d;
+  text-decoration: none;
+}
+
+.credits__link:hover {
+  color: #222;
+}
 .divider {
   width: 90%;
+  margin: 3rem;
 }
 
 .logo {
@@ -32,7 +54,7 @@ body  {
 .title {
   font-size: 32px;
   line-height: 40px;
-  color: #fff;
+  color: #222;
   font-weight: 700;
   margin: 1rem;
 }
@@ -40,7 +62,7 @@ body  {
 .sub-title {
   font-size: 24px;
   line-height: 30px;
-  color: #a0a0a0;
+  color: #444;
   font-weight: 600;
 }
 
@@ -54,6 +76,7 @@ body  {
 }
 
 .main-content {
+  border-radius: 10px;
   background: white;
   width: 100%;
   margin: 0 auto;
@@ -70,7 +93,7 @@ body  {
 }
 
 .highlight {
-  color: #11c7aa;
+  color: #ed225d;
   font-weight: 600;
 }
 
@@ -90,16 +113,16 @@ body  {
 
 .places__link {
   text-decoration: none;
-  color: white;
+  color: #222;
 }
 
 .places__link:hover {
-  color: #888;
+  color: #ed225d;
 }
 
 .places__spacer {
   font-size: 2rem;
-  color: white;
+  color: #222;
   line-height: 2rem;
 }
 
@@ -151,6 +174,10 @@ body  {
   .team__item {
     width: 30%;
     list-style: none;
+  }
+  .team__bio {
+    width: 80%;
+    margin: 0 auto;
   }
  }
 
