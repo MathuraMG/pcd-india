@@ -114,10 +114,15 @@ canvas {
 .places__link {
   text-decoration: none;
   color: #222;
+  padding: 0.5rem;
+  border: solid 1px #222;
+  border-radius: 5px;
 }
 
 .places__link:hover {
-  color: #ed225d;
+  background: #ed225d;
+  color: #fff;
+  border: solid 1px #ed225d;
 }
 
 .places__spacer {
@@ -138,6 +143,10 @@ canvas {
 }
 .grey {
   color: #868686;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 /* TEAM */
