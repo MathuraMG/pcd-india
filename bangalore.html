@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
     <title>Processing Day India</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blr.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.sound.min.js"></script>
@@ -19,85 +20,351 @@
     </p>
     <script src="./js/particle.js"></script>
     <script src="./js/sketch.js"></script>
-    <h1 class="title center"> Processing Community Day - Bangalore </h1>
-    <h2 class="sub-title center"> Feb 2nd 2019 | Venue - TBD </h2>
-    <a class="main__link" href="/">
-      <img src="./images/logo_black.png" class="logo">
-    </a>
-    <div class="main-content">
-      <p class="para grey">
-        Processing community day India has been created by and for the local communities in India
-      </p>
-      <hr class="divider">
-      <h2 class="sub-title left "> Open Calls </h2>
-      <p class="para left">
-        If you have work that you would like to showcase,
-        <a
-          class="link highlight"
-          href="https://docs.google.com/forms/d/e/1FAIpQLSeTbXZ1mN0jI2j3WIOwdJKnNtiAOzQdvEnCipf4yJ3-WniqNw/viewform"
-          target="_blank"
-        >
-          fill out this form describing your work
-        </a>
-      <br>
-        or
-      <br>
-        Fill out the following form if you would like to
-        <a
-          class="link highlight"
-          href="https://docs.google.com/forms/d/e/1FAIpQLSdNHubSEyHRbLRS4teSHaF6mpWW7q2b5I9zJ5VpZkU9-KISPg/viewform"
-          target="_blank"
-        >
-          run a workshop or give talks
-        </a>
-      </p>
-      <p class="para left">
-        The deadline for submission of these forms is <span class="bold">December 15, 2018</span>
-      </p>
-      <br>
-      <p class="para left">
-        For any questions, email
-        <a
-          class="link highlight"
-          href="mailto:bangalore@processingindia.org"
-          target="_top"
-          >
-          bangalore@processingindia.org
-        </a>
-      </p>
-      <hr class="divider">
+    <ul class="places__list blr-nav">
+      <li class="places__item">
+        <a class="places__link" href="#schedule"> Event Schedule </a>
+      </li>
 
-      <h2 class="sub-title left "> The Team </h2>
+      <li class="places__item">
+        <a class="places__link" href="#speakers"> Speakers </a>
+      </li>
+
+      <li class="places__item">
+        <a class="places__link" href="#workshops"> Workshop </a>
+      </li>
+
+      <li class="places__item">
+        <a class="places__link" href="#team"> Organizing Team </a>
+      </li>
+    </ul>
+    <div class="blr-body">
+      <h1 class="title center"> Processing Community Day - Bangalore </h1>
+      <h2 class="sub-title center"> Feb 2nd 2019 | Venue - TBD </h2>
+      <a class="main__link" href="/">
+        <img src="./images/logo_black.png" class="logo blr-logo">
+      </a>
+      <div class="main-content">
+        <p class="para grey">
+          Processing community day India has been created by and for the local communities in India
+        </p>
+        <hr class="divider">
+        <h2 class="sub-title left " id="schedule"> Event Schedule </h2>
+
+        <ul class="blr-event-list">
+          <li class="blr-event">
+            <h3 class="blr-time">
+              9:30 - 10:00
+            </h3>
+            <p class="blr-event-name">
+              Registrations
+            </p>
+          </li>
+          <li class="blr-event">
+            <h3 class="blr-time">
+              10:15 - 10:30
+            </h3>
+            <p class="blr-event-name">
+              Welcome!
+            </p>
+          </li>
+          <li class="blr-event">
+            <h3 class="blr-time">
+              10:30 - 11:45
+            </h3>
+            <p class="blr-event-name">
+              Talks
+            </p>
+          </li>
+          <ul class="blr-speakers">
+            <li class="blr-speaker">
+              <span class="highlight">Mithru Vigneshwara</span> - Beyond the Screen
+            </li>
+            <li class="blr-speaker">
+              <span class="highlight">Tanvi Kumar</span> - Stepping into the world of software through open source
+            </li>
+            <li class="blr-speaker">
+              <span class="highlight">Hardik Chandrahas</span> - Storytelling through creative coding
+            </li>
+            <li class="blr-speaker">
+              <span class="highlight">Arjit Kapoor</span> - Generative art and its principals.
+            </li>
+          </ul>
+          <li class="blr-event">
+            <h3 class="blr-time">
+              12:00 - 1:00
+            </h3>
+            <p class="blr-event-name">
+              Workshops
+            </p>
+          </li>
+          <ul class="blr-speakers">
+            <li class="blr-speaker">
+              <span class="highlight">Rasagy Sharma</span> - Beyond the Screen - An intro to data art
+            </li>
+            <li class="blr-speaker">
+              <span class="highlight">Future Fiction</span> - Principles of Programming in Creative Coding
+            </li>
+          </ul>
+
+          <li class="blr-event">
+            <h3 class="blr-time">
+              1:00 - 2:00
+            </h3>
+            <p class="blr-event-name">
+              Lunch + Project Showcase
+            </p>
+          </li>
+          <li class="blr-event">
+            <h3 class="blr-time">
+              2:00 - 3:00
+            </h3>
+            <p class="blr-event-name">
+              Workshops
+            </p>
+          </li>
+          <ul class="blr-speakers">
+            <li class="blr-speaker">
+              <span class="highlight">Dominic Barrett</span> - Using p5sound for musical performance and soundart
+            </li>
+            <li class="blr-speaker">
+              <span class="highlight">Processing Bangalore</span> - An Intro to P5
+            </li>
+          </ul>
+          <li class="blr-event">
+            <h3 class="blr-time">
+              3:00 - 3:30
+            </h3>
+            <p class="blr-event-name">
+              Coffee Break + Networking
+            </p>
+          </li>
+          <li class="blr-event">
+            <h3 class="blr-time">
+              3:30 - 5:00
+            </h3>
+            <p class="blr-event-name">
+              Talks
+            </p>
+          </li>
+          <ul class="blr-speakers">
+            <li class="blr-speaker">
+              <span class="highlight">Ashris Choudhury</span> - Networks - making the invisible visible with p5js
+            </li>
+            <li class="blr-speaker">
+              <span class="highlight">Usha Mohanraj</span> - Anyone Can Code: Learning to code at 50
+            </li>
+            <li class="blr-speaker">
+              <span class="highlight">Utsav Chadha</span> - Existentialism + Software
+            </li>
+            <li class="blr-speaker">
+              <span class="highlight">Lindsey Daniels</span> - Empowering the self through code and technology
+            </li>
+            <li class="blr-speaker">
+              <span class="highlight">Harshit Agrawal</span> - Artificial Intelligence and Art
+            </li>
+          </ul>
+          <li class="blr-event">
+            <h3 class="blr-time">
+              5:00 - 5:30
+            </h3>
+            <p class="blr-event-name">
+              Community Activity
+            </p>
+          </li>
+          <li class="blr-event">
+            <h3 class="blr-time">
+              5:30 - 6:00
+            </h3>
+            <p class="blr-event-name">
+              Community Photo
+            </p>
+          </li>
+        </ul>
+        <p class="para left">
+          For any questions, email
+          <a
+            class="link highlight"
+            href="mailto:bangalore@processingindia.org"
+            target="_top"
+            >
+            bangalore@processingindia.org
+          </a>
+        </p>
+
+        <hr class="divider">
+        <h2 class="sub-title left " id="speakers"> Speakers </h2>
+
+        <ul class="team__list">
+          <li class="team__item">
+            <p class="team__topic highlight">
+              Beyond the Screen
+            </p>
+            <img class="team__image team__image-blr" src="./images/bangalore/mithru.png" />
+            <p class="team__bio">
+              <span class="highlight">Mithru Vigneshwara</span> is an explorer / dreamer who enjoys building physical tangible artifacts and devices. He is a research resident at the Interactive Telecommunications Program at New York University, where he focuses on developing assistive technology. Outside of machines, he likes goats, coconuts and ice cream.
+            </p>
+          </li>
+
+          <li class="team__item">
+            <p class="team__topic highlight">
+              Stepping into the world of software through open source
+            </p>
+            <img class="team__image team__image-blr" src="./images/bangalore/tanvi.png" />
+            <p class="team__bio">
+              <span class="highlight">Tanvi Kumar</span> is a 20 year old passionate programmer, currently doing her B.Tech at NIT Trichy. She grew up in the city of Chennai and can speak Hindi, Tamil and English. Most of her time is spent coding, reading about new things in software and listening to music. She loves trying new things and meeting new people.
+            </p>
+          </li>
+
+          <li class="team__item">
+            <p class="team__topic highlight">
+              Generative art and its principals
+            </p>
+            <img class="team__image team__image-blr" src="./images/bangalore/arjit.png" />
+            <p class="team__bio">
+              <span class="highlight"> Arjit Kapoor</span> is a multidisciplinary explorer who enjoys working beyond the boundaries of the discipline. His works deal with understanding complexity and modeling natural systems. With a degree in Mechanical Engineering, his works tend to reflect an interplay between natural and mechanistic. Arjit is currently working as an operational analyst for OYO Rooms.
+
+            </p>
+          </li>
 
 
-      <ul class="team__list">
+          <li class="team__item">
+            <p class="team__topic highlight">
+              Anyone Can Code: Learning to code at 50
+            </p>
+            <img class="team__image team__image-blr" src="./images/bangalore/usha.png" />
+            <p class="team__bio">
+              <span class="highlight">Usha Mohanraj</span> is a seasoned homemaker, a mother of two, and since 2016, a coder too. She grew up in Tamil Nadu, lived in Seattle for 10 years with her family, and now resides in Kerala with her husband and two dogs, Oreo and Kayal. She started learning p5.js in 2016. She creates sketches to practice her coding skills, channel her creativity, and even make the occasional birthday present.
+            </p>
+          </li>
 
-        <li class="team__item">
-          <img class="team__image" src="./images/karthik.png" />
-          <p class="team__bio">
-            <span class="highlight">Karthik Dondeti</span> is a practicing architect and founder of Voxelscapes - an Architecture and Computational Design studio based in Bangalore. He holds a Bachelors Degree in Architecture from the School of Planning and Architecture, New Delhi and a Masters Degree focusing on Design and Technology from the Graduate School of Design at Harvard University. Karthik is passionate about operating at the intersection of the Digital and the Analogue and is currently working towards incorporating algorithmic design processes in the domains of Art and Architecture.
-          </p>
-        </li>
-        <li class="team__item">
-          <img class="team__image" src="./images/mathura.png" />
-          <p class="team__bio">
-            <span class="highlight">Mathura Govindarajan</span> is a software engineer and creative technologist from Bangalore, India. She holds a Bachelors in Electronics Engg. and completed her Masters and Fellowship at New York University's Interactive Telecommunications program. She was also a Processing Fellow in 2018 and was part of a team that worked on making p5.js more accessible to users with low vision and blindness. Currently working on two education based startup in New York and Bangalore, she enjoys making educational experiences and tools for children and adults alike.
-          </p>
-        </li>
-        <li class="team__item">
-          <img class="team__image" src="./images/rushali.png" />
-          <p class="team__bio">
-            <span class="highlight">Rushali Paratey</span> is an artist and engineer based in New York. She’s a Research Resident Fellow at New York University's Interactive Telecommunications program where she received her Masters. She is currently developing work that lies in the intersection of media arts and creative technology. She has a Bachelor's degree in Instrumentation Engineering from University of Mumbai and previously worked as a UX Designer for a crowdfunding platform - ketto.org.
-          </p>
-        </li>
-      </ul>
-      <hr class="divider">
-      <footer class="footer grey">
-        <span class="bold grey">CODE OF CONDUCT</span>
-        <br>
-        All participants in Processing Community Day (PCD) — including, but not limited to the PCD online forum are required to agree to the following Code of Conduct. This includes all attendees, speakers, performers, workshop leaders, patrons (sponsors), volunteers, and staff. The PCD team is dedicated to providing a harassment-free experience for everyone, regardless of gender, gender identity and expression, sexual orientation, disability, mental illness, neurotype, physical appearance, body, age, race, ethnicity, nationality, language, or religion. We do not tolerate harassment of participants in any form. Anyone participant who violates this Code of Conduct may be sanctioned or expelled from PCD at the discretion of the PCD organizers.
 
-      </footer>
+          <li class="team__item">
+            <p class="team__topic highlight">
+              Existentialism + Software
+            </p>
+            <img class="team__image team__image-blr" src="./images/bangalore/utsav.png" />
+            <p class="team__bio">
+              <span class="highlight">Utsav Chadha</span> often finds himself solving absurd questions through experiments in new media. He recently graduated from NYU's Interactive Telecommunications Program, and is presently working as a full stack developer in the mental health space. He also believes that the existence of paav bhaji is no mere coincidence, and deserves more hype.
+            </p>
+          </li>
+
+
+          <li class="team__item">
+            <p class="team__topic highlight">
+              Empowering the self through code and technology
+            </p>
+            <img class="team__image team__image-blr" src="./images/bangalore/ld.png" />
+            <p class="team__bio">
+              <span class="highlight">Lindsey Daniels</span> is a freelance tinkerer and technologist living in NYC. With a background in fine art and a graduate of NYU's Interactive Telecommunications Program, she enjoys exploring ways to bring together new tech with traditional mediums in the physical world. Passionate about food, storytelling, and the benefits of play; also makes a great a cheesecake.
+            </p>
+          </li>
+
+
+          <li class="team__item">
+            <p class="team__topic highlight">
+              Artificial Intelligence and Art
+            </p>
+            <img class="team__image team__image-blr" src="./images/bangalore/harshit.png" />
+            <p class="team__bio">
+              <span class="highlight">Harshit Agrawal</span> is a new media artist and human computer interaction (HCI) researcher. Through his artwork, he wants to create experiences for people to explore and express with seemingly distant technologies like artificial intelligence/ machine learning, drones, digital fabrication, sensors, augmented reality and in the process invite people to reflect upon and re-evaluate their relationship with technology. We live within a complex sphere of technical processes, and seldom do our experiences make us stop and come face to face with them, sit down and have a conversation with them, become comfortable with them to a level that we start reflecting on how they are truly affecting us and evolving our viewpoint of the world. As an artist, Harshit wants to create alternate lenses for looking at the influences that technology has on us. A lot of his current work focuses on the interplay between human and artificial intelligence, imagination and intention, spanning across virtual and physical embodiments. Harshit is a graduate of the MIT Media Lab and IIT Guwahati, both places which have helped him build and situate his practice as artistic, societal and technical enquiries.
+            </p>
+          </li>
+
+          <li class="team__item">
+            <p class="team__topic highlight">
+              Storytelling through creative coding
+            </p>
+            <img class="team__image team__image-blr" src="./images/bangalore/hardik.png" />
+            <p class="team__bio">
+              A former UX professional, <span class="highlight">Hardik Chandrahas</span> is deeply interested in analyzing ideas from a data-driven perspective. Data Viz. and Algorithmic Art being his core interest areas, he finds joy in learning new approaches and methods to visualize the surround and self (be it personal activities or a topic of wider importance). He is currently  pursuing his Masters in Information Design at NID Bengaluru. When not doing the above; he can be found cycling, brewing coffee, listening to podcasts and trying to sketch note his experiences.
+            </p>
+          </li>
+
+
+          <li class="team__item">
+            <p class="team__topic highlight">
+              Networks - making the invisible visible with p5js
+            </p>
+            <img class="team__image team__image-blr" src="./images/bangalore/ashris.png" />
+            <p class="team__bio">
+              "Hi <span class="highlight">Ashris Choudhury</span> here. I like to make invisible things visible with data science and creative coding. I am passionate about the possibilities that emerge when contrasting ideas, people and fields collide to create totally new domains. Pursuing my bachelors degree in Architecture at the beautiful campus of IIT Kharagpur, I explored how computers can be taught what good design is. I have researched on emotion driven urban planning at ETH Zurich and AR based Educational Interface at MIT Media Lab. Processing has been a key component in my learning process and I would love to share the joy I found with many more learners.”
+            </p>
+          </li>
+        </ul>
+
+        <hr class="divider">
+        <h2 class="sub-title left " id="workshops"> Workshops </h2>
+
+        <ul class="team__list">
+
+          <li class="team__item">
+            <p class="team__topic highlight">
+              An Intro to Data Art - Bring your name, take back art!
+            </p>
+            <img class="team__image team__image-blr" src="./images/bangalore/rasagy.png" />
+            <p class="team__bio">
+              <span class="highlight">Rasagy Sharma</span> is the Principal Designer at Gramener, and an aspiring data artist, who loves exploring the intersection of design, data and technology.
+
+            </p>
+          </li>
+
+          <li class="team__item">
+            <p class="team__topic highlight">
+              Using p5sound for musical performance and sound art
+            </p>
+            <img class="team__image team__image-blr" src="./images/bangalore/dom.png" />
+            <p class="team__bio">
+              <span class="highlight">Dominic Barrett</span> is a creative technologist who develops software, hardware, and conceptual tools for creators, artists, and performers. He is also a sound artist, teacher, and explores the poetics of our creative technology.
+            </p>
+          </li>
+
+
+          <li class="team__item">
+            <p class="team__topic highlight">
+              Programming Fundamentals, Concepts and Computational Power
+            </p>
+            <img class="team__image team__image-blr" src="./images/bangalore/ff.png" />
+            <p class="team__bio">
+              <span class="highlight">Future Fiction</span> is a new platform that addresses the future of Indian digital expressions. Through their events like ‘Eyemyth Media Arts Festival’, they bring together pioneering artists, performers and experts at the forefront of Immersive storytelling and New Media Arts. They have also been conducting workshops on creating interactive art experiences through AR, VR, Game Design and Creative Coding.
+              Future Fiction is a project by Quicksand Design studio, a design and research consultancy based in New Delhi, Bangalore and Goa.
+            </p>
+          </li>
+
+        </ul>
+        <hr class="divider">
+
+        <h2 class="sub-title left " id="team"> Organizing Team </h2>
+
+
+        <ul class="team__list">
+          <p> This event is organised by individuals from Bangalore in collabaration with the <span class="highlight">Srishti ACM Chapter</span> and hosted by <span class="highlight">Srishti School of Design</span>
+          <li class="team__item">
+            <img class="team__image team__image-blr" src="./images/karthik.png" />
+            <p class="team__bio">
+              <span class="highlight">Karthik Dondeti</span> is a practicing architect and founder of Voxelscapes - an Architecture and Computational Design studio based in Bangalore. He holds a Bachelors Degree in Architecture from the School of Planning and Architecture, New Delhi and a Masters Degree focusing on Design and Technology from the Graduate School of Design at Harvard University. Karthik is passionate about operating at the intersection of the Digital and the Analogue and is currently working towards incorporating algorithmic design processes in the domains of Art and Architecture.
+            </p>
+          </li>
+          <li class="team__item">
+            <img class="team__image team__image-blr" src="./images/mathura.png" />
+            <p class="team__bio">
+              <span class="highlight">Mathura Govindarajan</span> is a software engineer and creative technologist from Bangalore, India. She holds a Bachelors in Electronics Engg. and completed her Masters and Fellowship at New York University's Interactive Telecommunications program. She was also a Processing Fellow in 2018 and was part of a team that worked on making p5.js more accessible to users with low vision and blindness. Currently working on two education based startup in New York and Bangalore, she enjoys making educational experiences and tools for children and adults alike.
+            </p>
+          </li>
+          <li class="team__item">
+            <img class="team__image team__image-blr" src="./images/rushali.png" />
+            <p class="team__bio">
+              <span class="highlight">Rushali Paratey</span> is an artist and engineer based in New York. She’s a Research Resident Fellow at New York University's Interactive Telecommunications program where she received her Masters. She is currently developing work that lies in the intersection of media arts and creative technology. She has a Bachelor's degree in Instrumentation Engineering from University of Mumbai and previously worked as a UX Designer for a crowdfunding platform - ketto.org.
+            </p>
+          </li>
+        </ul>
+        <hr class="divider">
+        <footer class="footer grey">
+          <span class="bold grey">CODE OF CONDUCT</span>
+          <br>
+          All participants in Processing Community Day (PCD) — including, but not limited to the PCD online forum are required to agree to the following Code of Conduct. This includes all attendees, speakers, performers, workshop leaders, patrons (sponsors), volunteers, and staff. The PCD team is dedicated to providing a harassment-free experience for everyone, regardless of gender, gender identity and expression, sexual orientation, disability, mental illness, neurotype, physical appearance, body, age, race, ethnicity, nationality, language, or religion. We do not tolerate harassment of participants in any form. Anyone participant who violates this Code of Conduct may be sanctioned or expelled from PCD at the discretion of the PCD organizers.
+
+        </footer>
+      </div>
     </div>
   </body>
 </html>
