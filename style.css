@@ -162,6 +162,7 @@ canvas {
 .team__item {
   width: 100%;
   list-style: none;
+  margin: 1rem 0;
 }
 
 .team__image {
@@ -169,6 +170,13 @@ canvas {
   max-width: 250px;
   display: flex;
   margin: 0 auto;
+
+}
+.team__image-blr {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  border-radius: 50%;
+  margin: 1rem auto;
 }
 
 .team__bio {
