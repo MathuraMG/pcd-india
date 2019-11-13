@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+    <title>Processing Day India</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.sound.min.js"></script>
+    <style type="text/css">
+    	.topn {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0px;
+  height: 90px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 1px dashed #999;
+}
+#nav-list {
+  margin-left: 0;
+  width: 15%;
+  min-width: 180px;
+  height: 50px;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  position: relative;
+  display: inline-block;
+  float: left;
+  border-left: 1px dashed #999;
+  text-align: left;
+  color: black;
+/*  background: lime;*/
+}
+#nav-list2{
+  margin-left: 100px ;
+  width: 9%;
+  min-width: 80px;
+  height: 70px;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 100px;
+  position: relative;
+  display: inline-block;
+  float: left;
+  border-left: 1px dashed #999;
+  text-align: left;
+  color: black;
+/*  background: lime;*/  
+}
+
+#nav-list2 li{
+   display: block;
+  list-style-type: none;
+  margin: 0;    display: block;
+  list-style-type: none;
+  margin: 0; 
+}
+#nav-list li {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+}
+.nav-link {
+  font-size: 18px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.nav-link a, .nav-link a:visited {
+  color: black;
+  text-decoration: none;  
+}
+
+.nav-link2 {
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.nav-link2 a, .nav-link2 a:visited {
+  color: black;
+  text-decoration: none;   
+}
+
+.nav-link a:hover{
+  color: #7621bf;
+}
+
+.nav-link2 a:hover {
+  color: #7621bf;  
+}
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    color: black;
+}
+h1 {
+  color: #7621bf;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 100px;
+  font-family: 'theserif';
+  font-weight: normal;
+}
+h2 {
+  font-family: 'theserif';
+  font-weight: normal;
+  margin-bottom: 0px;
+  color: #7621bf;
+  font-size: 46px;
+}
+h3 {
+  font-family: 'theserif';
+  font-weight: normal;
+  margin-top: 0%;
+  margin-bottom: 4%;
+  color: #7621bf;
+  font-size: 36px;
+}
+h4 {
+    font-family: 'theserif';
+    font-size: 22px;
+    margin-top: 0%;
+    margin-bottom: 2%; 
+}
+body {
+  margin: 0;
+  background: white;
+  /*
+    background: #d2e1dd;*/
+  color: white;
+}
+.top{
+    text-align: center;
+    margin: 2px;
+    font-size: 30px;
+}
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 40px;
+    border: solid 1px black;
+    text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    outline: 0px;;
+    display: inline-block;
+    border: 0px dashed #999;
+    /*border: 1px solid black;*/
+    border-style: inset;
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+
+    content: "";
+    display:table;
+    clear: both;
+}
+
+.ulnav {
+    border-style: outset;
+    /*border-radius: 2px;*/
+    border-color: black;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#linav { 
+    display: inline-block;
+    list-style-position: inside;
+    border-style: inset;
+    float: left;
+}
+
+#linav a {
+
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#linav a:hover {
+    background-color: #111;
+}
+.active
+{
+    margin: 10px;
+    padding: 30px;
+    background-color:gold;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+/*Social Media Button */
+.fa {
+  padding: 7px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 20px 10px;
+  border-radius: 50%;
+}
+.fa:hover{
+    opacity: 0.7;
+}
+.fa-twitter {
+  background: white;
+  color: black;
+}
+.fa-skype {
+  background: white;
+  color: white;
+}
+.fa-linkedin {
+  background: white;
+  color: black;
+}
+.fa-gmail{
+  background: white;
+  color: black;
+}
+
+/* */
+#tid1{
+    color: black;
+}
+
+#tid2{
+    color: black;
+}
+
+.im{border-radius: 50%;
+    width: 100px;
+    
+
+}
+.tcolumn{
+    float: left;
+    width: 33.33%
+}
+/*footer */
+.fo{
+    text-align: center;
+}
+
+/* team*/
+#content-wrapper {
+/*  background: red;*/
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+.content-container {
+  padding-top: 40px;
+  margin-bottom: 20px;
+  border-top: 1px solid rgba(62, 101, 158, 0);
+}.team-group-title {
+  color: #37a06b;
+  margin: 0 40px 20px;
+}
+.team-group {
+  width: 100%;
+  margin: 0 auto;
+}
+.team {
+  vertical-align: top;
+  display: inline-block;
+  width: 250px;
+  margin: 0 40px 60px;
+}
+.team-pic {
+  width: 250px;
+  height: 340px;
+  background: #3e659e;
+  margin-bottom: 30px;
+  position: relative
+}
+.team-pic img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);  /* For Webkit browsers */
+    filter: gray;  /* For IE 6 - 9 */
+    -webkit-transition: all .2s ease;  /* Transition for Webkit browsers */
+}
+.i{
+  width: 250px;
+  height: 340px;
+  background: #3e659e;
+  margin-bottom: 30px;
+  position: relative
+}
+.team-name {
+  color: #7621bf;
+}
+
+.team-role{
+  margin-top: 10px;
+  font-size: 14px;
+  color: black;
+}
+.team-bio p {
+  font-size: 15px;
+  line-height: 18px;
+}
+p{
+    line-height: 30px;
+}
+#outer-box {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 2560px;
+  min-height: 300px;
+  height: 100%;
+  margin-top:0;
+  padding-top:0;
+  margin: auto;
+}
+#inner-box {
+    position: relative;
+    display: block;
+    width: 80%;
+    max-width: 1920px;
+    height: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 30px;
+    margin-bottom: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin: auto;
+}
+.team {
+    width: 200px;
+  }
+
+
+
+/*team*/
+.button {
+  font-size: 1em;
+  padding: 0px;
+  color: #fff;
+  border: 2px solid #ed225d;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+}
+.button:hover {
+  background: #ed225d;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 2s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color:#ed225d;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+/* About */
+.schedule-row {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 2%;
+/*background: green;*/
+}
+.schedule-row-left,
+.schedule-row-right {
+  display: inline-block;
+  vertical-align: top;
+}
+.schedule-row-left {
+  width: 15%;
+  display: inline-block;
+  vertical-align: top;
+/*  background: yellow;*/
+  margin-right: 3%;
+}
+.schedule-row-right {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+/*  background: red;*/
+}
+.schedule-time {
+  color: #37a06b;
+  text-align: left;
+}
+.schedule-event-title {
+  color: #7621bf;
+}
+/*Contact*/
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-font-smoothing:antialiased;
+  -moz-font-smoothing:antialiased;
+  -o-font-smoothing:antialiased;
+  font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+
+.container {
+  max-width:400px;
+  width:100%;
+  margin:0 auto;
+  position:relative;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+  background:#F9F9F9;
+  padding:0px;
+  margin:50px 0;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact textarea {
+  width:100%;
+  border:1px solid #CCC;
+  background:#FFF;
+  margin:0 0 5px;
+  padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact textarea:hover {
+  -webkit-transition:border-color 0.3s ease-in-out;
+  -moz-transition:border-color 0.3s ease-in-out;
+  transition:border-color 0.3s ease-in-out;
+  border:1px solid #AAA;
+}
+
+#contact textarea {
+  height:100px;
+  max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+  font-size: 1em;
+  padding: 0px;
+  color: #fff;
+  border: 2px solid #ed225d;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.1s ease-out;  
+}
+
+.button:hover {
+  background: #ed225d;
+}
+
+#contact button[type="submit"]:hover {
+  background:#09C;
+  -webkit-transition:background 0.3s ease-in-out;
+  -moz-transition:background 0.3s ease-in-out;
+  transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+  outline:0;
+  border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+    </style>
+  </head>
+
+  <body>
+    <p class="credits">
+      <a class="credits__link" href="https://www.openprocessing.org/sketch/413567"> Sketch </a>
+      by
+      <a class="credits__link" href="https://www.openprocessing.org/user/60876"> Jason Labbe </a>
+    </p>
+    <script src="./js/particle.js"></script>
+    <script src="./js/sketch.js"></script>
+    <h1 class="title center"> Processing Community Day - Jalandhar </h1>
+    <h2 class="sub-title center"> Feb 2nd 2019 | Venue - Lovely Professional University </h2>
+    <a class="main__link" href="/">
+      <img src="./images/logo_black.png" class="logo">
+    </a>
+    <div class="main-content">
+      <p class="para grey">
+        Processing community day India has been created by and for the local communities in India
+      </p>
+      <hr class="divider">
+      <h2 class="sub-title left "> Open Calls </h2>
+      <p class="para left">
+        If you have work that you would like to showcase, 
+        </a>
+      <br>
+        or
+      <br>
+      If you would like to run a workshop or give talks, 
+        <a
+          class="link highlight"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSc3etSQWd_xghDwQyey-tXphrdxeDEPWMI2waPyNoLO7gOEZg/viewform?usp=sf_link"
+          target="_blank"
+        >
+          fill out this form describing your work
+        </a>
+      </p>
+      <p class="para left">
+        The deadline for submission of these forms is <span class="bold">January 28, 2019</span>
+      </p>
+      <p class="para left">It's open call for all the Creative Coder, Developer, Eductor, Designer, Student to attend and explore this event.</p>
+      <br>
+      <p class="para left">
+        For any questions, email
+        <a
+          class="link highlight"
+          href="mailto:isakashroy@outlook.com"
+          target="_top"
+          >
+          isakashroy@outlook.com,
+        </a>
+        <a
+          class="link highlight"
+          href="mailto:deepadev1610@gmail.com"
+          target="_top"
+          >
+          deepadev1610@gmail.com,
+        </a>
+        <a
+          class="link highlight"
+          href="mailto:shrivastavakartik19@gmail.com"
+          target="_top"
+          >
+          shrivastavakartik19@gmail.com
+        </a>
+      </p>
+<hr class="divider">
+
+
+       <section id="team">
+    <h2 class="sub-title left ">Meet Our Amazing Team</h2>
+       <ul class="team__list">
+                <!-- ****************** Team ****************** -->
+      <div class="team-group">
+            
+    <!-- ****************** Sky  ****************** -->
+ <div class="team">
+  <img  src="./images/akash.jpg" alt="Xin Xin's photo" height="340px" width="250px">
+  <!-- ****************** Little Intro ****************** -->
+ 
+<h4><span class="highlight">Akash Roy</span></h4>
+                <h5><p>Lead Designer & Speaker</p></h5>		
+                <p>Akash is a Indie Game Developer,Coder,Artist. He love creative coading and also using gaming engine for developing the pc game.</p>
+                <a href="https://www.linkedin.com/in/akash-r-479b75137/" class="fa fa-linkedin"></a>
+                <a href="https://twitter.com/itsakashroy" class="fa fa-twitter"></a>
+                
+                <br>
+          <a class="button" href="#popup1">More...</a>
+
+           <div id="popup1" class="overlay">
+              <div class="popup">
+                <h2>Here i am</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content"> 
+           <center><div class="team-pic"><img src="./images/akash.jpg" alt="Akash's photo"></div></center>
+            <div class="team-name"><span class="highlight">Akash Roy</span></div>
+            <h5><div class="team-role">Lead Designer & Speaker </div></h5>
+            <div class="team-bio">
+                <p>Akash is a Indie Game Developer from Kolkata West Bengal and pursuing his Bachelor degree in CSE at Lovely Professional University Punjab, he love the computer graphics and 2D & 3D animation, modeling, level design, character design, He is Passionate about game developing having intermideat knowledge of C, C++, C#, Java and JavaScript and some software knowledge of Blender, Maya, Photoshop, Unity3D, Unreal Engine. He espcially develop game on Unity3d and Unreal Engine and after making few mini game now he's focus on the PC Game Developing is under development.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+        <!-- ****************** Deep ****************** -->
+
+          <div class="team">
+            <img src="./images/deepa.jpg" alt="Deepa's photo" height="340px" width="250px">
+            <!--Little Intro-->
+<h4><span class="highlight">Deepa Devarajan</span></h4>
+                <h5><p>Lead Speaker & Developer</p></h5>
+                <p>Deepa is an aspiring Front-End Web Developer, Passionate Coder, currently pursuing her Bachelor's degree from Lovely professional University.</p>
+                <a href="https://www.linkedin.com/in/deepa1610/" class="fa fa-linkedin" ></a>
+                <a href="https://www.facebook.com/deepa.devarajan.50" class="fa fa-facebook" ></a>
+                
+                <br>
+            <a class="button" href="#popup2">More...</a>
+
+            <div id="popup2" class="overlay">
+              <div class="popup">
+                <h2>Here i am</h2>
+                <a class="close" href="#">&times;</a>
+                 <div class="content">
+           <center><div class="team-pic"><img src="./images/deepa.jpg" alt="Deepa's photo"></div></center>
+            <div class="team-name"><span class="highlight"> Deepa Devarajan </span></div>
+            <h5><div class="team-role">Lead Speaker & Developer</div></h5>
+            <div class="team-bio">
+                <p>She is immensely passionate about coding and is quite proficient in the python language. She codes on platforms like HackerEarth and HackerRank. Her main area of interest is problem solving.She loves to brainstorm and come up with logic of solving a particular problem. Apart from python,she has intermediate knowledge about C/C++,MySQL,Java,HTML,CSS,JavaScript.She is constantly striving to build up her confidence as well as her oratory skills and hence likes to attend as well as organize seminars.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+            
+          <!-- ****************** Kartik ******************-->
+          <div class="team">
+            <img src="./images/kartik.jpeg" alt="kartik's photo" height="340px" width="250px" >
+            <!--Little Intro-->
+<h4><span class="highlight">Kartik Shrivastava</span></h4>
+                <h5><p>Lead Developer & Speaker</p></h5>
+                <p>Kartik is an Indie game developer and skilled in developing games in Unity3D game engine, 3d character modeller, artist and interested in game engine development.</p>
+                <a href="https://www.linkedin.com/in/kartik-techiegeekyfreak/" class="fa fa-linkedin" ></a>
+                <a href="mailto:shrivastavakartik19@gmail.com" target="_top" class="fa fa-google" ></a>
+                <br>
+
+            <a class="button" href="#popup3">More...</a>
+
+            <div id="popup3" class="overlay">
+              <div class="popup">
+                <h2>Here i am</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+            <center><div class="team-pic"><img src="./images/kartik.jpeg" alt="kartik's photo"></div></center>
+            <div class="team-name"><span class="highlight">Kartik Shrivastava</span></div>
+            <h5><div class="team-role">Lead Developer & Speaker</div></h5>
+            <div class="team-bio">
+                <p>A computer graphics enthusiast who loves everything which have some relation with CG. always open to learn new technologies .Developing indie games since past two years and landed on a mixed realiyty based startup last years as a development intern. Till now solely published two infinite runner game with unity and two AR/VR apps for Scanta Inc. one being a demo Virtual reality app and another an Augmented Reality app which would be live very soon "Pikamoji".</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        </div>
+        </ul>
+      </section>
+      <hr class="divider">
+      <footer class="footer grey">
+        <span class="bold grey">CODE OF CONDUCT</span>
+        <br>
+        All participants in Processing Community Day (PCD) — including, but not limited to the PCD online forum are required to agree to the following Code of Conduct. This includes all attendees, speakers, performers, workshop leaders, patrons (sponsors), volunteers, and staff. The PCD team is dedicated to providing a harassment-free experience for everyone, regardless of gender, gender identity and expression, sexual orientation, disability, mental illness, neurotype, physical appearance, body, age, race, ethnicity, nationality, language, or religion. We do not tolerate harassment of participants in any form. Anyone participant who violates this Code of Conduct may be sanctioned or expelled from PCD at the discretion of the PCD organizers.
+
+      </footer>
+    </div>
+  </body>
+</html>

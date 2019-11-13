@@ -8,6 +8,9 @@ h1,h2,h3,p {
   margin: 0;
   padding: 0;
 }
+h3,p,footer {
+  font-family: Georgia,Times,Times New Roman,serif; 
+}
 body  {
   background-size: cover;
   background-position: center;
@@ -54,9 +57,10 @@ canvas {
 .title {
   font-size: 32px;
   line-height: 40px;
-  color: #222;
-  font-weight: 700;
+  color: #eee;
+  font-weight: 400;
   margin: 1rem;
+  text-transform: uppercase;
 }
 
 .sub-title {
@@ -67,21 +71,38 @@ canvas {
 }
 
 .para {
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 14px;
+  line-height: 20px;
   color: #444;
   font-weight: 400;
   width: 80%;
   margin: 1rem auto;
 }
 
+.title__content {
+  width: 100%;
+  height: 40%;
+  padding: 3rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .main-content {
-  border-radius: 10px;
-  background: white;
   width: 100%;
   margin: 0 auto;
   margin-bottom: 5rem;
   padding-bottom: 2rem;
+}
+
+.main-red {
+  background: #f76c6c;
+}
+
+.main-lblue {
+  background: #a8d0e6;
 }
 
 .link {
@@ -184,9 +205,23 @@ canvas {
 }
 
 /* RESPONSIVENESS */
-@media all and (min-width:1200px){
+@media all and (min-width:768px){
+  body {
+    height: 100%;
+  }
+  
+  .main-sub-content {
+    width:50%;
+    padding: 3rem;
+    overflow-y: scroll;
+  }
   .main-content {
-    width: 80%;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
   }
   .team__item {
     width: 30%;
@@ -198,8 +233,4 @@ canvas {
   }
  }
 
-@media all and (min-width: 768px) and (max-width: 1200px) {
-  .main-content {
-    width: 80%;
-  }
- }
+
