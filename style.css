@@ -8,7 +8,7 @@ h1,h2,h3,p {
   margin: 0;
   padding: 0;
 }
-h3,p,footer {
+h2, a, h3,p,footer {
   font-family: Georgia,Times,Times New Roman,serif; 
 }
 body  {
@@ -37,7 +37,7 @@ canvas {
 }
 
 .credits__link {
-  color: #ed225d;
+  color: #f8e9a1;
   text-decoration: none;
 }
 
@@ -51,8 +51,9 @@ canvas {
 
 .logo {
   fill:white;
-  width: 150px;
-  height: 150px;
+  width: 50px;
+  height: 50px;
+  padding: 0.5rem;
 }
 .title {
   font-size: 32px;
@@ -64,15 +65,15 @@ canvas {
 }
 
 .sub-title {
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 28px;
   color: #444;
-  font-weight: 600;
+  
 }
 
 .para {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 22px;
   color: #444;
   font-weight: 400;
   width: 80%;
@@ -102,7 +103,7 @@ canvas {
 }
 
 .main-lblue {
-  background: #a8d0e6;
+  background:  #a8d0e6;
 }
 
 .link {
@@ -114,7 +115,7 @@ canvas {
 }
 
 .highlight {
-  color: #ed225d;
+  color: #f8e9a1;
   font-weight: 600;
 }
 
@@ -141,9 +142,9 @@ canvas {
 }
 
 .places__link:hover {
-  background: #ed225d;
+  background: #f8e9a1;
   color: #fff;
-  border: solid 1px #ed225d;
+  border: solid 1px #f8e9a1;
 }
 
 .places__spacer {
@@ -162,8 +163,8 @@ canvas {
   width: 80%;
   margin: 1rem auto;
 }
-.grey {
-  color: #868686;
+.white {
+  color: #dddddd;
 }
 
 .bold {
@@ -174,7 +175,6 @@ canvas {
 .team__list {
   padding: 0;
   display: flex;
-  width: 80%;
   justify-content: space-between;
   margin: 0 auto;
   flex-wrap: wrap;
@@ -212,7 +212,7 @@ canvas {
   
   .main-sub-content {
     width:50%;
-    padding: 3rem;
+    padding: 2rem;
     overflow-y: scroll;
   }
   .main-content {
@@ -224,12 +224,17 @@ canvas {
     padding: 0;
   }
   .team__item {
-    width: 30%;
+    width: 100%;
+    display: flex;
     list-style: none;
   }
   .team__bio {
     width: 80%;
     margin: 0 auto;
+  }
+  .team__image {
+    width: 100px;
+    height:100px;
   }
  }
 
