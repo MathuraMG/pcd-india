@@ -82,7 +82,7 @@ canvas {
 
 .title__content {
   width: 100%;
-  height: 40%;
+  height: 60%;
   padding: 3rem;
   box-sizing: border-box;
   display: flex;
@@ -94,8 +94,13 @@ canvas {
 .main-content {
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 5rem;
-  padding-bottom: 2rem;
+  /* margin-bottom: 5rem; */
+  /* padding-bottom: 2rem; */
+}
+
+.main-sub-content {
+  height: 100%;
+  padding: 1rem 0;
 }
 
 .main-red {
@@ -119,12 +124,34 @@ canvas {
   font-weight: 600;
 }
 
+.footer {
+  font-size: 12px;
+  line-height: 18px;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.content-image {
+  width: 80%;
+  margin: 0 10%;
+  margin-bottom: 0.25rem;
+}
+
+.img-caption {
+  font-size: 10px;
+  line-height: 14px;
+  font-style: italic;
+  margin-top: 0;
+}
+
 /* PLACES MENU */
 .places__list {
   padding: 0;
   display: flex;
   flex-direction: row;
   list-style: none;
+  margin: 1rem auto;
+  width: 80%;
 }
 .places__item {
   margin: 0 0.5rem;
@@ -201,7 +228,8 @@ canvas {
 }
 
 .team__bio {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
 }
 
 /* RESPONSIVENESS */
@@ -210,6 +238,9 @@ canvas {
     height: 100%;
   }
   
+.title__content {
+  height: 40%;
+  } 
   .main-sub-content {
     width:50%;
     padding: 2rem;
