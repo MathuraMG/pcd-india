@@ -81,6 +81,7 @@ canvas {
 }
 
 .title__content {
+  background: #24305E;
   width: 100%;
   height: 40%;
   padding: 3rem;
@@ -94,8 +95,13 @@ canvas {
 .main-content {
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 5rem;
-  padding-bottom: 2rem;
+  /* margin-bottom: 5rem; */
+  /* padding-bottom: 2rem; */
+}
+
+.main-sub-content {
+  height: 100%;
+  padding: 1rem 0;
 }
 
 .main-red {
@@ -119,12 +125,21 @@ canvas {
   font-weight: 600;
 }
 
+.footer {
+  font-size: 12px;
+  line-height: 18px;
+  width: 80%;
+  margin: 1rem auto;
+}
+
 /* PLACES MENU */
 .places__list {
   padding: 0;
   display: flex;
   flex-direction: row;
   list-style: none;
+  margin: 1rem auto;
+  width: 80%;
 }
 .places__item {
   margin: 0 0.5rem;
@@ -201,7 +216,8 @@ canvas {
 }
 
 .team__bio {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
 }
 
 /* RESPONSIVENESS */
