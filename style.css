@@ -81,9 +81,8 @@ canvas {
 }
 
 .title__content {
-  background: #24305E;
   width: 100%;
-  height: 40%;
+  height: 60%;
   padding: 3rem;
   box-sizing: border-box;
   display: flex;
@@ -130,6 +129,19 @@ canvas {
   line-height: 18px;
   width: 80%;
   margin: 1rem auto;
+}
+
+.content-image {
+  width: 80%;
+  margin: 0 10%;
+  margin-bottom: 0.25rem;
+}
+
+.img-caption {
+  font-size: 10px;
+  line-height: 14px;
+  font-style: italic;
+  margin-top: 0;
 }
 
 /* PLACES MENU */
@@ -226,6 +238,9 @@ canvas {
     height: 100%;
   }
   
+.title__content {
+  height: 40%;
+  } 
   .main-sub-content {
     width:50%;
     padding: 2rem;
