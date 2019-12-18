@@ -16,6 +16,7 @@ If you'd like to add yourself to this site - make a copy of this repository and 
 * Create a folder within the repo with the name of your city. [Here's an example of Delhi](https://github.com/MathuraMG/pcd-india/tree/master/delhi)
 * Within that folder host your index.html and all other related assets.
 * You can also opt to copy the [Bangalore website](https://github.com/MathuraMG/pcd-india/blob/master/bangalore.html) and change the details to match your event.
+* Finally, make a PR to have the changes merged in. If the PR is not merged in a day - please email mmg9291@gmail.com. If the change is urgent and needs to be done ASAP, ping  mmg9291@gmail.com and we can get it done!
 * NOTE: Please do not change any of the files in the root folder or another cities folder other than adding your city in `index.html`
 
 ## Are you outside of India?
