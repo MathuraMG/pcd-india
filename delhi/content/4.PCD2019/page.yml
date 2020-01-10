@@ -1,0 +1,17 @@
+bypass_cache: true
+title: PCD 2019
+url: https://google.com
+content: |
+  Processing Community Day is a community event that will bring together people of all ages to celebrate and explore art, code, and diversity. The day-long event features fun filled workshops on making generative art from simple lines of code and interaction spaces to make playful artworks.
+  <br>You'll learn few tricks and play with p5 to add life to a character or to just create beautiful 10 prints with a machine. No prior coding experience is really required to make it, just a ton of curiosity to learn and understand how programs work
+  <br>To learn more about Processing as a tool, go to our <a href="./?/about">About</a> page.
+event_visibility: block
+title_visibility: block
+gallery_visibility: block
+speakers_visibility: block
+activity_visibility: none
+addcalender: none
+date_time: January 27th, 9:00 am onwards
+address: Timeblur Studio (Vasant Kunj)
+address_sub: 15 minutes away from Munirka and Chhatarpur Metro Stations
+bring_these: Laptop and a notepad

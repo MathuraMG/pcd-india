@@ -18,6 +18,12 @@ function setup(){
 		logo_image.classList.toggle('itsday_title');
 		let logo_text = document.getElementById("_logo_text");
 		logo_text.style.filter= "invert(1)";
+
+		let nav_text = document.getElementById("navigation");
+		nav_text.style.filter= "invert(1)";
+		var items = nav_text.getElementsByTagName("li");
+		for (var i = 0; i < items.length; ++i)
+		  items[i].style.filter= "grayscale(1)";
 	}
 	else{
 		background(255);
