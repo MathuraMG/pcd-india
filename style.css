@@ -9,7 +9,7 @@ h1,h2,h3,p {
   padding: 0;
 }
 h2, a, h3,p,footer {
-  font-family: Georgia,Times,Times New Roman,serif; 
+  font-family: Georgia,Times,Times New Roman,serif;
 }
 body  {
   background-size: cover;
@@ -19,6 +19,7 @@ body  {
   justify-content: center;
   align-items: center;
   margin: 0;
+  background: #25315e;
 }
 
 canvas {
@@ -68,7 +69,7 @@ canvas {
   font-size: 20px;
   line-height: 28px;
   color: #444;
-  
+
 }
 
 .para {
@@ -237,10 +238,10 @@ canvas {
   body {
     height: 100%;
   }
-  
+
 .title__content {
   height: 40%;
-  } 
+  }
   .main-sub-content {
     width:50%;
     padding: 2rem;
@@ -268,5 +269,3 @@ canvas {
     height:100px;
   }
  }
-
-
