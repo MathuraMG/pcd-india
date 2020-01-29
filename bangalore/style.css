@@ -93,7 +93,7 @@ canvas {
 }
 
 .button:hover {
-  background: #040404;
+  background: #04040400;
   color: #e69e06;
 }
 
@@ -317,7 +317,7 @@ width: inherit;
   }
   .team__item {
     margin: 1rem auto ;
-    width: 27%;
+    width: 45%;
     display: flex;
     list-style: none;
     flex-direction: column;
